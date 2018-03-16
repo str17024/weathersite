@@ -1,58 +1,73 @@
-/* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    
+    header h1 {
+        font-size: 5.5em;
+    }
+    
+    header .subheading {
+        font-size: 2em;
+    }
+    
+    nav ul li a {
+        padding: 0.8rem 2rem;
+    }
+    
+   
+        
+    main > .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    main h2 {
+        margin: 0.5em 1.75em 0 1.75em;
+        padding: 0.3em 0 0 0;
+        font-size: 4em;
+    }
+    
+    main h3 {        
+        font-size: 1.69em;
+    }
+    
+    main section p, article.info p, article.info ul li, p.w-story {
+        font-size:1.3em;
+    }
+    
 
-  
-  nav {
+    
+    table {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    table th, td {
+        border: 0.5px solid black;
+    }
+    
+    main p.town-article {
+        font-size: 1.56em;
+    }
+        
+    main article.container, main .flexbox, .flexbox1{
+        margin: 0 7em 0 7em;
+    }
+    
+    main article.container img, .flexbox1>img { 
+        padding: 1em;
+    }
+    
+    footer {
+        font-size: 1.3em;
+    }
+    
+    main > .grid {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em 7em 0;
+    }
+    
  
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3232+0,aa0000+100 */
-background: #ff3232; /* Old browsers */
-background: -moz-linear-gradient(top, #ff3232 0%, #aa0000 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ff3232 0%,#aa0000 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ff3232 0%,#aa0000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3232', endColorstr='#aa0000',GradientType=0 ); /* IE6-9 */
-  
+    
 }
-
-  nav button { display:none; }  /* hamburger button does not need to be shown */
-
-nav ul {
- margin-left: 2%; 
-  
-}
-
-nav ul.hide {display: block;}
-
-nav ul li { 
-  float: left;
-  
-}
-
-nav ul li a {
-  border: none;
-  border-right: 1px solid rgba (0,0,0,0.3);
-  padding: .6rem 1rem;
-}
-  
-  
- article p.town-article img { width: 29.333%; }  
-  
-} /*end large */
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
- 
-  
-
-
-
-
-
