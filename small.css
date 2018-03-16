@@ -3,7 +3,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
+/*
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
@@ -13,12 +13,14 @@ nav button {
 
 nav {
     background-color: #aa0000;
-    font-family: Verdana, sans-serif;}
+    font-family: Verdana, sans-serif;
+    width: 100%;
+}
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;}
+    padding: .5em;}
 
 
 nav ul li a {
@@ -33,7 +35,27 @@ nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff;}
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 nav ul.hide {diplay:none;}
+*/
 
+header, main, footer {     
+   color: green;
+   margin-left: 0 auto;
+   margin-right: 0 auto;
+   width: 100%;
+  /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    
+    background-color: #9afdfe; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+}
 
 .weathersummary{
     flex-shrink: 1;
@@ -64,7 +86,7 @@ nav ul.hide {diplay:none;}
 }
 
 .franklinimage {
-    width= 20%;
+    width= 100%;
     align-self: flex-start;
 }
 
