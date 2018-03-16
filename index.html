@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CoatOrNot</title>
   <meta name="author" content="Ken Strobell">
-  <meta name="description" content="Springfield weather page">
+  <meta name="description" content="Franklin weather page">
  	
 	
 	
@@ -20,24 +20,12 @@
 </head>
 <body>
 
-  <script> 
-      var urlString, urlArray, pageHREF, menu, i, currentURL;
-      urlString = document.location.href; 
-      urlArray = urlString.split('/'); 
-      pageHREF = urlArray[urlArray.length - 1]; 
-      if (pageHREF !== "") { menu = document.querySelectorAll('ul#primaryNav li a'); 
-                            for (i = 0; i < menu.length; i++) { currentURL = (menu[i].getAttribute('href')); menu[i].parentNode.className = '';
-                            if (currentURL === pageHREF) { menu[i].parentNode.className = 'active';
-                                
-                                                        } 
-                                                              } 
-                           } 
-    </script>
+  
     
     
   <header>
     	  
-    <img src="sunnyday1.jpeg" alt="CoatOrNot site logo" width="10%" height="50em" >
+    <img src="sunnyday1.jpeg" alt="CoatOrNot site logo" width="20%" height="70em" >
     <h1>CoatOrNot</h1>
     <div class="subheading">Should I bring a coat... or not?</div>
 	
@@ -53,7 +41,7 @@
   <nav class="clearfix">
     <button onclick="toggleMenu()">&#9776;</button>
 	 <ul id="primaryNav" class="hide"> 
-	  <li><a class="active" href="https://str17024.github.io/lesson9/">Home</a></li>
+	    <li><a class="active" href="https://str17024.github.io/lesson9/">Home</a></li>
 	  <li><a href="https://str17024.github.io/franklin/">Franklin</a></li>
 	  <li><a href="https://str17024.github.io/Greenville/">Greenville</a></li>
 	  <li><a href="https://str17024.github.io/springfield/">Springfield</a></li>
@@ -62,28 +50,20 @@
          </ul>
 </nav>		
     
-<!--<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#franklin">Franklin</a>
-  <a href="#Greenville">Greenville</a>
-  <a href="#Springfield">Springfield</a>
-  <a href="#Storm Center">Storm Center</a>
-  <a href="#Gallery">Gallery</a>
-</div> -->
     
  <div id="main">		
   
     
   <main>
 	  <p>
-    <h2 text-align="center">The City of Springfield</h2>
+    <h2 text-align="center">The Weather Site</h2>
 	  
 	  
 </br>
 </br>
 </br>
 </br>
-<section class="weathersummary">
+<div class="weathersummary">
     <div class="franklinimage">
       <img src="houses.jpeg" alt="franklinimage" width="100%">
     </div>
@@ -101,116 +81,19 @@
     </aside>
         
       </div>           
-    </section>
-</p>
-	  </br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-
-
-<p>
-	</br>
-<p class=citytag>City of</p>
-<p id=demo align="center"></p>
-<p class=citytaga>City Motto</p>
-<p id=demoa align="center"></p>
-<p class=citytagb>Year Founded</p>
-<p id=demob align="center"></p>
-<p class=citytagc>Current Population</p>
-<p id=democ align="center"></p>
-<p class=citytagd>Upcoming Events!</p>
-<p id=demod align="center"></p>
-    <script>
-     
-   
-  //var franklin = {
-   // "name": "Franklin",
-   // "motto": "Where you will grow!",
-   // "yearFounded": 1788,
-   // "currentPopulation": 30458,
-    //"averageRainfall": 21,
-   // "events" : [
-     // "March 4: March to the Drum of Donuts",
-     // "September 5 - 11: Founder Days",
-     // "December 1 - 26: Christmas in the Heart"
-   // ]
- // };
- 
-  //greenville = {
-   // "name": "Greenville",
-   // "motto": "Green is our way of life.",
-  // "yearFounded": 1805,
-  // "currentPopulation": 33458,
-   //"averageRainfall": 25,
-   // "events" : [
-    //  "February 10-12: Greenbration",
-     // "May 8 - 18: Greenville Founder Days",
-     // "June 20: Verde and Valiant Day",
-     // "November 15-16: Greensome Gathering"
-   // ]
- // };
-
-  
-  //placerton = {
-    //"name": "Placerton",
-   // "motto": "Postive Placement in Placerton.",
-  //  "yearFounded": 1946,
-   // "currentPopulation": 512,
-  // "averageRainfall": 39,
-   // "events" : [
-   //   "July 4: A Blaze of Glory",
-   //  "October 20: Fall through Fall"
-   // ]
-//};
-
-
-  springfield = {
-    "name": "Springfield",
-    "motto": "Where everyone is lifted.",
-    "yearFounded": 1826,
-    "currentPopulation": 17852,
-    "averageRainfall": 17,
-    "events" : [
-      "January 8: Spring into Winter",
-      "April 10-20: Celebration of Life",
-     "July 31-Aug 15: Dog Days of Summer Festival"
-    ]
- };
-
-       
- 
- document.getElementById("demo").innerHTML = springfield.name;
-document.getElementById("demoa").innerHTML = springfield.motto;             
-document.getElementById("demob").innerHTML = springfield.yearFounded;             
-document.getElementById("democ").innerHTML = springfield.averageRainfall;           
-document.getElementById("demod").innerHTML = springfield.events;         
     
-        
-        
-</script>
-
-<div id="towns">
-
-  
-    
-    
-</div>
 
 
-<section id="townssec">
+
+
+
+
+
 
 </section>
 
-      </br>
-</br>
-</br>
-</br>
-</br>
-</br>
+      
+
 
 <div>
 
@@ -220,7 +103,7 @@ document.getElementById("demod").innerHTML = springfield.events;
 <p>
     
 	    <p>
-      <h3>Springfield Breaks Record!</h3>
+      
 	    </p>
 	    </br>
        </br>
@@ -232,15 +115,17 @@ document.getElementById("demod").innerHTML = springfield.events;
 
 
         <p>
-        <div class="town-articletext">    
+        <!--<div class="town-articletext">    
         !!Short article content placeholder. But imagine the amazing articles that section will hold!! Like google api fonts.
-        </div>    
+        </div>    -->
         
 
 </p>
-</p>
 
 
+<section class="grid">
+
+</section>
   </main>
     
 </br>
@@ -253,13 +138,56 @@ document.getElementById("demod").innerHTML = springfield.events;
     <aside>
       Contact information: Ken Strobell
     </aside>
-    <p class="footer-bar" background-color="gray">&copy;2017 All Rights Reserved | CoatOrNot | <span id="currentdate.js">Todays date listed below!</span></p>
+    <p class="footer-bar"> &copy;2018 All Rights Reserved &vert; CoatOrNot &vert;Todays date listed below!<span id="currentdate.js"></span></p>
   </footer>
-</p>
+
+  
+
   <script src="hamburger.js"></script>
   <script src="currentdate.js"></script>
   <script src="windchill.js"></script>
   <script src="windchill2.js"></script>
 
+
+  <script>
+            var section = document.querySelector('section');
+            var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL);
+            request.responseType = 'json';
+            request.send();
+            request.onload = function() {
+                var towns = request.response;
+                showTowns(towns);
+            }
+            function showTowns(jsonObj) {
+                var towns = jsonObj['towns'];
+
+                for (var i = 0; i < towns.length; i++) {
+                    if (i === 2) { continue; }
+                    var myArticle = document.createElement('article');
+                    var myH3 = document.createElement('h3');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+                   
+                    myH3.textContent = towns[i].name;
+                    myPara1.textContent = 'Motto: ' + towns[i].motto;
+                    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+                    myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
+                    myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+                    
+                    myArticle.appendChild(myH3);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myPara4);
+                    
+                    section.appendChild(myArticle);
+                } 
+            }
+        
+        </script>
 
 </html>
